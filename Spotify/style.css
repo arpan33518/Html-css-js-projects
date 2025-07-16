@@ -54,3 +54,9 @@ body {
 .heading img {
   max-width: 25px;
 }
+
+.footer{
+  display: flex;
+  font-size: 10px;
+  ;
+}
