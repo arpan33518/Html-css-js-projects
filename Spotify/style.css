@@ -1,4 +1,42 @@
-body{
-    background-color: black;
-    color: white;
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+   font-family: "Roboto", sans-serif;
+}
+
+body {
+  /* background-color: black;
+    color: white; */
+}
+
+.left {
+  width: 25vw;
+  padding: 10px;
+}
+
+.right {
+  width: 75vw;
+}
+
+.home {
+  padding: 10px;
+}
+
+.home ul li {
+  width: 15px;
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  padding: 14px;
+  font-weight: bold;
+}
+
+.home .logo {
+  position: relative;
+  display: flex;
+  gap: 2px;
+  left: 6px;
+  align-items: center;
 }
