@@ -7,8 +7,8 @@
 }
 
 body {
-  /* background-color: black;
-    color: white; */
+  /* background-color: black; */
+  color: white;
 }
 
 .left {
@@ -16,8 +16,9 @@ body {
   padding: 10px;
 }
 
-.right {
+.container .right {
   width: 75vw;
+  margin: 16px 0;
 }
 
 .home {
@@ -55,8 +56,30 @@ body {
   max-width: 25px;
 }
 
-.footer{
+.library {
+  min-height: 75vh;
+  position: relative;
+}
+
+.footer {
   display: flex;
   font-size: 10px;
-  ;
+  gap: 13px;
+  flex-wrap: wrap;
+  position: absolute;
+  bottom: 0;
+}
+
+.footer a {
+  color: grey;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(35, 35, 35);
+}
+
+.header > * {
+  padding: 20px;
 }
