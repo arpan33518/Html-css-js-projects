@@ -17,6 +17,22 @@ async function getSongs() {
     }
 
     console.log("Songs:", songs);
+    return songs;
 }
 
-getSongs();
+async function main() {
+    //Get the lsit of all the songs
+    let songs= await getSongs()
+    console.log(songs)
+
+    let songUL = document.querySelector(".songList").getElementsByTagName("ul")[0]
+    for(const song of songs){
+        songUL.innerHTML = songUL.innerHTML + `<li>${decodeURIComponent(song.split("/").pop())}</li>`;
+    }
+
+    //Play the first song
+    var audio = new Audio(songs[0]);
+    audio.play();
+}
+
+main();

@@ -170,16 +170,51 @@ body {
   position: absolute;
   bottom: 0;
   background-color: green;
-  width: 100%;
+  width: 90%;
   padding: 12px;
 }
 
-.playbuttons{
+.playbuttons {
   max-width: 20px;
 }
 
-.songbuttons{
+.songbuttons {
   display: flex;
   justify-content: center;
   gap: 12px;
+}
+
+.songList ul {
+  padding: 0 42px;
+}
+
+.songList ul li {
+  list-style-type: decimal;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 26px;
+  cursor: pointer;
+  padding: 12px 20px;
+  border: 1px solid white;
+  font-size: 15px;
+  margin: 12px 0;
+}
+
+.info {
+  flex: 1; /* Takes up remaining space */
+  white-space: nowrap;
+}
+
+.playnow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0; /* Prevents it from shrinking */
+}
+
+.playnow span {
+  display: flex;
+  font-size: 15px;
 }
