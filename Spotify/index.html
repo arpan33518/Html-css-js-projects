@@ -14,7 +14,8 @@
         <!-- Home -->
         <div class="home bg-grey rounded m-1 p-1">
           <div class="logo">
-            <img class="invert" src="logo.svg" alt="Logo" />Spotify
+            <img class="invert"  src="logo.svg" alt="Logo" />
+            <div>Spotify</div>
           </div>
           <ul>
             <li><img class="invert" src="home.svg" alt="home" />Home</li>
@@ -29,8 +30,7 @@
           </div>
 
           <div class="songList">
-            <ul>
-            </ul>
+            <ul></ul>
           </div>
           <div class="footer">
             <div>
@@ -166,17 +166,23 @@
 
           <div class="playbar">
             <div class="seekbar">
-              <div class="circle">
-                
+              <div class="circle"></div>
+            </div>
+
+            <div class="abovebar">
+              <div class="songinfo"></div>
+              <div class="songbuttons">
+                <img
+                  id="previous"
+                  class="playbuttons"
+                  src="prevsong.svg"
+                  alt=""
+                />
+                <img id="play" class="playbuttons" src="play.svg" alt="" />
+                <img id="next" class="playbuttons" src="nextsong.svg" alt="" />
               </div>
+              <div class="songtime"></div>
             </div>
-            <div class="songinfo"></div>
-            <div class="songbuttons">
-              <img class="playbuttons" src="prevsong.svg" alt="" />
-              <img class="playbuttons" src="play.svg" alt="" />
-              <img class="playbuttons" src="nextsong.svg" alt="" />
-            </div>
-            <div class="playtime"></div>
           </div>
         </div>
       </div>
