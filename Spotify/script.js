@@ -107,6 +107,20 @@ async function main() {
             play.src = "play.svg"
         }
     })
+
+    // Attach an event listener for hamburger
+    document.querySelector(".hamburger").addEventListener("click",()=>{
+        console.log("click")
+        document.querySelector(".left").style.left= "0";
+    })
+
+    // Attach an event listener for hamburger
+    document.querySelector(".close").addEventListener("click",()=>{
+        console.log("click")
+        document.querySelector(".left").style.left= "-100%";
+    })
+
+  
 }
 
 main();
